@@ -1,0 +1,420 @@
+/* src/App.css */
+
+/* Estilo do corpo da página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Estilo do menu de navegação */
+nav {
+  background-color: #007bff;
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+nav li {
+  margin: 0 0.25rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo do contêiner principal */
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Estilo do título */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Estilo para o botão customizado */
+.custom-button {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 0 0.5rem; /* Adiciona margem entre os botões */
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.custom-button:active {
+  background-color: #004494;
+}
+
+.button-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Estilo para o componente ToggleAnswer */
+.toggle-answer {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.answer {
+  font-size: 16px;
+  margin-top: 1rem;
+  color: #495057;
+  text-align: justify;
+}
+
+.toggle-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.toggle-button:active {
+  background-color: #004494;
+}
+
+/* Estilo para o componente Box */
+.custom-box {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Estilo para o grupo de botões */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Adiciona espaço entre os botões */
+}
+
+/* Estilo para o componente Input */
+.custom-input {
+  padding: 0.75rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 500px; /* Ajusta a largura máxima conforme necessário */
+  box-sizing: border-box;
+  margin-right: 0.5rem;
+}
+
+/* Estilo para o grupo de input e botão */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espaço entre o input e o botão */
+  margin-bottom: 1rem;
+}
+
+/* Estilo para a lista de tarefas */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  position: relative; /* Necessário para o posicionamento dos botões */
+}
+
+/* Alinha o texto da tarefa e garante que os botões fiquem à direita */
+.todo-item .todo-text {
+  flex-grow: 1; /* Permite que o texto ocupe o máximo de espaço disponível */
+  margin-right: 1rem; /* Adiciona espaço entre o texto e os botões */
+}
+
+.todo-item button {
+  margin-left: 0.5rem; /* Espaço entre os botões */
+}
+
+/* Estilo para o texto das tarefas concluídas */
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Estilo específico para os botões na lista de tarefas */
+.todo-item .todo-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espaço entre os botões */
+  margin-left: auto; /* Alinha os botões à direita */
+}
+
+/* Estilo para o filtro de nomes */
+.name-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* Estilo dos rótulos dos dropdowns */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+/* Estilo dos menus dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #333333;
+  box-sizing: border-box;
+  appearance: none; /* Remove a seta padrão */
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+/* Estilo para quando o dropdown está desativado */
+select:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+/* Adiciona uma seta customizada para o dropdown */
+select::-ms-expand {
+  display: none; /* Remove a seta padrão no IE */
+}
+
+/* Estilo para o menu dropdown ao focar ou passar o mouse sobre ele */
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Estilo dos itens da lista */
+option {
+  padding: 10px;
+}
+
+/* Estilo do texto de carregamento */
+p {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Estilo para a lista de municípios */
+.municipios-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.municipios-list li {
+  background-color: #f9f9f9;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+/* Estilo para a lista de pessoas e cargos */
+.person-item {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Remove o estilo do strong para o nome */
+.person-item strong {
+  color: #333; /* Mantém a cor padrão para o nome */
+}
+
+/* Estilo para o texto de lista vazia */
+p.empty-list {
+  font-size: 16px;
+  text-align: center;
+  color: #888;
+  margin-top: 1rem;
+}
+
+/* Estilo específico para a lista de rankings */
+.ranking-list {
+  margin-top: 1rem;
+}
+
+.ranking-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ranking-list li {
+  font-size: 16px;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.ranking-list .rank {
+  font-weight: ;
+  margin-right: 0.5rem;
+  color: dark-gray;
+}
+
+/* src/Home.css */
+
+.home-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+.description {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.intro {
+  margin-top: 2rem;
+}
+
+.intro h2 {
+  font-size: 24px;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.exercise-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.exercise-list li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Exercise13.css */
+.button-danger {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os botões */
+  margin-top: 20px;
+}
+
+/* Exercise14.css */
+.button-success {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os botões */
+  margin-top: 20px;
+}
+
+.button-save {
+  background-color: green; /* Cor de fundo verde */
+  color: white;            /* Texto em branco */
+  border: none;            /* Remove a borda */
+  padding: 10px 20px;      /* Espaçamento interno */
+  cursor: pointer;         /* Cursor de ponteiro ao passar sobre o botão */
+  border-radius: 4px;     /* Bordas arredondadas */
+}
